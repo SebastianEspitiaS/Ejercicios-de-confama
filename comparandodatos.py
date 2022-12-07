@@ -3,8 +3,6 @@ edadUsuario = int(input("Digita tu edad: "))
 saldoUsuario = int(input("Digita Cuanto dinero tienes: "))
 
 #proceso
-
-
 print("Discoteca PERRO NEGRO LTDA\n")
 
 if (edadUsuario < 18):

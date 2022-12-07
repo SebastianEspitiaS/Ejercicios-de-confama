@@ -1,9 +1,9 @@
-#hamburguesa el coral
+#hamburguesa el corral
 print("************************")
 print("Hamburguesas el Corral")
 print("************************")
 nombre = input("Escriba su nombre: ")
-cedula = input("Esciba su numero de cedula: ")
+cédula = input("Escriba su numero de cédula: ")
 pedido = input("Que hamburguesa va a pedir: ")
 valorHamburguesa = int(input("Valor de la Hamburguesa: "))
 cantidad = int(input("Cuantas hamburguesas va pedir: "))
