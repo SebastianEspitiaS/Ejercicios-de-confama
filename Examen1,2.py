@@ -7,9 +7,10 @@ def borrarPantalla():
 
 productos = []
 datosP = [None,None,None]
+producto = {}
 
 while True:
-    producto = {}
+
     print('1. recibir nombre de un producto \n2. mostrar los productos registrados \n3. agregar un nuevo producto \n4. eliminar un producto \n0. Salir')
 
     opcion = int(input("Digita una opción: "))
@@ -17,16 +18,16 @@ while True:
     match (opcion):
         case (1):
             print("ingrese un nuevo producto:")
-            '''datosP[0] = input('ingrese el nombre del producto: ')
+            datosP[0] = input('ingrese el nombre del producto: ')
             datosP[1] = int(input('ingrese el valor del producto: '))
             datosP[2] = input('ingrese el código del producto: ')
 
-            Productos [datosP[0]] = datosP[1], datosP[2]'''
+            producto[datosP[0]] = [datosP[1], datosP[2]]
 
-            producto["codigo"] = input('ingrese el código del producto: ')
+            """producto["codigo"] = input('ingrese el código del producto: ')
             producto["nombre"] = input('ingrese el nombre del producto: ')
             producto["precio"] = int(input('ingrese el valor del producto: '))
-            productos.append(producto)
+            productos.append(producto)"""
 
 
             entrada = input('presione la tecla "ENTER" para volver al menu')
