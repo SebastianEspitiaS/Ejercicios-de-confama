@@ -42,24 +42,20 @@ def actualizarProductos(producto, dp):
                             dp[1] = input('Ingrese el nuevo nombre: ').capitalize()
                             producto[dp[1]] = producto[dp[0]]
                             del producto[dp[0]]
-                            print(f'{producto[dp[1]] = }')
+                            print(f'{list(producto.keys())[-1]} {producto[dp[1]] }')
                     case('2'):
                         while True:
                             try:
-                                dp[1] = int(input('Ingrese un nuevo valor para el producto, presiona "ENTER" para cancelar: ')
-                                            or producto[dp[0]][0])
+                                producto[dp[0]] [0]= int(input('Ingrese un nuevo valor para el producto, presiona "ENTER" para cancelar: ') or producto[dp[0]][0])
                             except:
                                 print('El dato ingresado no es valido... ')
+                                continue
                             else:
-                                producto [dp[0]] [0] = dp[1]
                                 break
                     case('3'):
-                            dp[2] = input("Ingrese el nuevo código del producto: ")
-                            producto [dp[0]] [1] = dp[2]
-
+                            producto[dp[0]] [1] = input('Ingrese el nuevo código del producto, presiona "ENTER" para cancelar: ') or producto [dp[0]][1]
         elif op == '0':
             break
-
         else:
             print('Digita una opción correcta...')
         entrada = input('Presione la tecla "ENTER" para volver al menu')
@@ -71,7 +67,7 @@ def eliminarProductos(producto,dp):
         print('El nombre que acaba de ingresar no esta en la lista de productos...')
     else:
         while True:
-            dp[1] = input(f'Estas seguro que quieres eliminar {dp[0]} de la lista? (S/N)')
+            dp[1] = input(f'Estas seguro que quieres eliminar "{dp[0]}" de la lista? (S/N): ')
             if not dp[1].lower() in ['si', 's', 'no', 'n']:
                 print('Digite una opción correcta...')
                 continue
@@ -125,23 +121,3 @@ producto["nombre"] = input('ingrese el nombre del producto: ')
 producto["precio"] = int(input('ingrese el valor del producto: '))
 productos.append(producto)
 """
-
-'''datosP[0] = input('Digita el nombre del producto que quieres actualizar: ').capitalize()
-        if producto.get(datosP[0]) == None:
-            print('El nombre que acaba de ingresar no esta en la lista de productos...')
-        else:
-            try:
-                datosP[1] = int(input('Ingrese un nuevo valor para el producto: '))
-            except:
-                print('El dato ingresado no es valido... ')
-            else:
-                producto [datosP[0]] [0] = datosP[1]
-                while True:
-                    datosP[2] = input(('Quiere cambiar el código del producto? (S/N): '))
-                    if not datosP[2].lower() in ['si', 's', 'no', 'n']:
-                        print('Digite una opción correcta...')
-                        continue
-                    elif datosP[2].lower() in ['si', 's']:
-                        datosP[2] = input("Ingrese el nuevo código del producto: ")
-                        producto [datosP[0]] [1] = datosP[2]
-                    break'''
