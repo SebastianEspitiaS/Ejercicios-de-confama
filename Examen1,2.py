@@ -58,7 +58,7 @@ def actualizarProductos(producto, dp):
             break
         else:
             print('Digita una opción correcta...')
-        entrada = input('Presione la tecla "ENTER" para volver al menu')
+        input('Presione la tecla "ENTER" para volver al menu')
         borrarPantalla()
 
 def eliminarProductos(producto,dp):
@@ -108,7 +108,7 @@ while option != '0':
 
     else:
         print('Ingresa una opción correcta...')
-    entrada = input('Presione la tecla "ENTER" para volver al menu')
+    input('Presione "ENTER" para volver al menu')
     borrarPantalla()
 
 borrarPantalla()
