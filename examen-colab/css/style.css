@@ -1,0 +1,12 @@
+banner{
+    background-image: url(../imagenes/parque\ yarumal.jpg);
+}
+
+body{
+    background-image: url(../imagenes/parque\ yarumal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
